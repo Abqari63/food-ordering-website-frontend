@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign Up - FoodHunt</title>
+        <link rel="stylesheet" href="Signup.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+        <script src="SignUp.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="formWrapper">
+                <div class="formDiv">
+                    <h2>Create Account</h2>
+                    <p class="text"> Sign Up with Social Media</p>
+                    <div class="socialBtn">
+                        <div class="facebook icon"><i class="fab fa-facebook-square"></i></div>
+                        <div class="Google icon"><i class="fab fa-google"></i></div>
+                        <div class="instagram icon"><i class="fab fa-instagram"></i></div>
+                    </div>
+                    <hr>
+                    <div class="orDiv">Or</div>
+                    <p class="text"> Sign up with email Address</p>
+                    <form class="form-field" onsubmit="return(validate())">
+                        <div class="formGroup">
+                            <i class="far fa-user"></i>
+                            <input type="text" name="name" id="name" placeholder="Name">
+                        </div>
+                        <div class="formGroup">
+                            <i class="far fa-envelope"></i>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="formGroup">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                        </div>
+                        <div class="formGroup">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="password" id="confirm" placeholder="Confirm password">
+                        </div>
+                        <div class="formGroup">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" name="address" id="address" placeholder="Address">
+                        </div>
+                        <div class="formGroup">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <input type="password" name="PIN" id="PIN" placeholder="PIN">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox" checked>
+                            <span class="text">By creating my account, I Agree Terms & conditions.</span>
+                        </div>
+                        <button class="btn">SIGN UP</button>
+                    </div>
+                </form>
+                <div class="welcomeDiv">
+                    <h2>Welcome Back</h2>
+                    <p class="text">Get in touch with us for news letter and more updates.</p>
+                    <a href="Login.html"><button class="btn2">LOGIN</button></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>About us - FoodHunt</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .text h1 {
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+            text-decoration: underline;
+            text-decoration-color: orange;
+            text-decoration-thickness: 10px;
+            text-shadow: 10px 5px 10px grey;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .pic-container {
+            position: relative;
+            background-image: url('images/food poster.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
+            height: 25vw;
+            box-shadow: 0px 0px 30px black;
+            z-index: 3;
+        }
+
+        .pic-overlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background: linear-gradient(120deg, black, black);
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+        }
+        .pic-text {
+            color: white;
+            font-size: 2vw;
+            opacity: 1;
+        }
+
+        .lower-container {
+            display: flex;
+            justify-content: space-around;
+            height: 27vw;
+            width: 100%;
+            padding: 15px;
+        }
+        .img {
+            position: relative;
+            width: 30%;
+            height: 350px;
+        }
+
+        .img1 {
+            background-image: url('images/about image 2.jpg');
+            background-size: cover;
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            width: 60%;
+            height: 250px;
+            z-index: -1;
+            box-shadow: 0px 0px 20px black;
+        }
+
+        .img2 {
+            background-image: url('images/about image 1.jpg');
+            background-size: cover;
+            position: absolute;
+            bottom: 10px;
+            right: 30px;
+            width: 60%;
+            height: 250px;
+        }
+        
+        .text {
+            padding: 30px;
+            width: 60%;
+            margin-left: 50px;
+        }
+
+        .about-text {
+            padding: 10px;
+            margin-top: 40px;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 30px;
+            text-shadow: 10px 5px 10px grey;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="pic-container">
+                <div class="pic-overlay">
+                    <div class="pic-text">
+                        <h1>Healthy food and family environment</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-container">
+                <div class="img">
+                    <div class="img1">  
+                    </div>
+                    <div class="img2">
+                    </div>
+                </div>
+                <div class="text">
+                    <h1>About us</h1>
+                    <p class="about-text">
+                        Welcome to our Food ordering community, here we provide you with best of the taste available.
+                        Chinese, Indian, American and different types of desserts are available here. We cook and serve
+                        with immense amount of love and delicacy. You found what you think and like so come and get what
+                        you want. We deliver the best taste that you have ever tasted please find explore our website to
+                        know more about <span style="color: red; font-weight: bold">FoodHunt - Taste Of Tongue</span>. We are here to assist
+                        you any time we are available 24x7.<br><br>Thankyou for visiting our website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

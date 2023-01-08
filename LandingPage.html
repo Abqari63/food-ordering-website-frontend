@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> FoodHunt - Taste Of Tongue</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="LandingPage.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-nav">
+            <a class="menu active" href="#home">Home</a>
+            <a class="menu" href="#orders">Orders</a>
+            <a class="menu" href="Services.html">Services</a>
+            <a class="menu" href="Help.html">Help</a>
+            <a class="menu" href="About.html">About</a>            
+            <div class="dropdown">
+                <button class="drop-btn">Categories <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#Indian">Indian Food Mix</a>
+                    <a href="#Chinese">Chinese Food</a>
+                    <a href="#American">American twist</a>
+                    <a href="#Desert">Desserts</a>
+                </div>
+            </div> 
+            <div class="search-container">
+                <form>
+                <input type="text" placeholder="Search your taste..." name="search" onfocus="this.placeholder=''" onblur="this.placeholder='Search your taste...'">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    <div class="color-overlay">
+        <div class="auto-typed">
+        </div>
+
+        <div class="login-section">
+            <a href="login.html" target="_blank">
+                <button class="login-btn" type="button">Login</button>
+            </a>
+            <a href="signup.html" target="_blank">
+                <button class="sign-up-btn" type="button">Sign Up</button>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-typed", {
+        strings: ["","Welcome to our top Food ordering community...!","Where your Taste is being served", "Checkout our latest dishes", "Order Now...!"],
+        backSpeed: 25,
+        typeSpeed: 50,
+        loop: true
+        })
+    </script>
+</body>
+</html>
